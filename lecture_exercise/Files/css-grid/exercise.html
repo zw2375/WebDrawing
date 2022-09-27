@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Grid Exercise</title>
+
+    <style>
+      * {margin: 0;}
+
+      .a, .b, .c {
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+
+      .wrapper {
+        height: 100vh;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        /* grid-template-areas: 
+        "..c."
+        ".aa."
+        ".aa."
+        "..c."
+        ; */
+      }
+
+      .a {
+        background-color: rgba(255, 0, 0, 0.5);
+        grid-column: 2/4;
+        grid-row:2/4;
+        z-index: 2;
+      }
+
+      .b {
+        background-color: rgba(0, 255, 0, 0.5);
+        grid-column: 3/5;
+        grid-row:2;
+        z-index: 3;
+      }
+
+      .c {
+        background-color: rgba(0, 0, 255, 0.5); 
+        grid-column: 3;
+        grid-row: 1/5;
+        z-index: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="a">A</div>
+      <div class="b">B</div>
+      <div class="c">C</div>
+    </div>
+  </body>
+</html>

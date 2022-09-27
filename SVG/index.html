@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Faces of Shapes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Architects+Daughter">
+
+    <style>
+      body {
+          background-image: url(https://stat.ameba.jp/user_images/20170513/14/illust-ya/14/48/j/o1600108213936328374.jpg?caw=800);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+    }
+
+      h1 {
+        font-family: Architects Daughter;
+        color:  #44d091;
+        position: fixed;
+        top: 10px;
+        font-size: 5em;
+        margin-top: 40%;
+        z-index: 100;
+        margin-left:5%;
+      }
+
+      .face {
+        fill: #8cb2de;
+        height: 300px;
+        padding-bottom: 50px;
+        width: 450px;
+      }
+      .faces{
+        display:flex;
+      }
+
+      .framing{ 
+          margin-top:3%;
+          margin-left: 13%;
+          display: grid;
+          text-align: center;
+          font-family:Architects Daughter;
+          font-size: 3em;
+          width: 500px;
+          height: 500px;
+          backdrop-filter: blur(20px);
+          border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+          color:#8cb2de;
+          box-shadow: 20px 20px rgba(0,0,0,.15);
+          transition: all .4s ease;
+      }
+      .framing:hover{
+        border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+        box-shadow: 10px 10px rgba(0,0,0,.25);
+      }
+      #circle .face:hover{
+        fill:#cacce7;
+      }
+
+      #square .face:hover{
+        fill:#5fbcd3ff;
+      }
+      #heart .face:hover{
+        fill:#f7a4c0;
+      }
+      #star .face:hover{
+        fill:#f4f3a6;
+      }
+      #poly .face:hover{
+        opacity: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <h1>Shapes' Faces: Hover to See More!</h1>
+    <div class = "faces">
+      <div class = "framing"id = "circle">
+          <span>Penguin the Circle </span>
+          <svg class="face" >
+          <use href="symbol-defs.svg#icon-circle" />
+          </svg>
+      </div>
+
+      <div class = "framing"id = "square">
+          <span>Square Quack</span>
+          <svg class="face">
+          <use href="symbol-defs.svg#icon-square" />
+          </svg>
+      </div>  
+
+      <div class = "framing"id = "heart">
+          <span>Broken Heart</span>
+          <svg class="face">
+          <use href="symbol-defs.svg#icon-heart" />
+          </svg>
+      </div>
+
+      <div class = "framing"id = "star">
+          <span>Star the Super Star</span>
+          <svg class="face">
+          <use href="symbol-defs.svg#icon-star" />
+          </svg>
+      </div>
+      <div class = "framing" id = "poly">
+          <span>Poly the Gohst</span>
+          <a href="#0" class="poly-face">
+          <svg class="face">
+          <use href="symbol-defs.svg#icon-poly" />
+          </svg>
+      </div>
+  </div>
+  </body>
+</html>

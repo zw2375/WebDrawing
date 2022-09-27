@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="square.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.1214231"
+     inkscape:cx="198.40861"
+     inkscape:cy="279.10964"
+     inkscape:window-width="1312"
+     inkscape:window-height="872"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect1150"
+       style="fill:#000000;stroke-width:3.1;stroke-dasharray:0.31, 0.31"
+       d="M 40.126953 55.287109 L 40.126953 169.4082 A 92.739304 77.579994 0 0 1 74.904297 163.56836 A 92.739304 77.579994 0 0 1 167.64453 241.14844 A 92.739304 77.579994 0 0 1 74.904297 318.72852 A 92.739304 77.579994 0 0 1 40.126953 312.88672 L 40.126953 471.72266 L 456.5625 471.72266 L 456.5625 289.91992 A 92.739304 77.579994 0 0 1 411.84766 299.75977 A 92.739304 77.579994 0 0 1 319.10742 222.17969 A 92.739304 77.579994 0 0 1 411.84766 144.59961 A 92.739304 77.579994 0 0 1 456.5625 154.23633 L 456.5625 55.287109 L 40.126953 55.287109 z M 187.26172 337.96289 L 321.02148 337.96289 L 237.19922 419.10938 L 187.26172 337.96289 z " />
+    <circle
+       style="fill:#000000;stroke-width:3.1;stroke-dasharray:0.31, 0.31"
+       id="path1351"
+       cx="94.968613"
+       cy="256.53619"
+       r="28.981033" />
+    <circle
+       style="fill:#000000;stroke-width:3.1;stroke-dasharray:0.31, 0.31"
+       id="path1351-8"
+       cx="393.63104"
+       cy="194.14137"
+       r="28.981033" />
+  </g>
+</svg>

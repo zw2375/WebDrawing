@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SpongeBob SquarePants</title>
+        <style>
+        
+        body{
+          width: 100%;
+          height: 60%;
+          background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b297e143-e206-4a8f-8b5c-59dbc26a99d5/ddtdlgv-48ac2b91-bab5-41fe-a2ca-7b80cc57c92d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IyOTdlMTQzLWUyMDYtNGE4Zi04YjVjLTU5ZGJjMjZhOTlkNVwvZGR0ZGxndi00OGFjMmI5MS1iYWI1LTQxZmUtYTJjYS03YjgwY2M1N2M5MmQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.mrMOlioaOnl4YVoeaOz9lzHDZFxzZxF_oBI6Eu4_rLs");
+          background-size: cover;
+        }
+        .scene {
+          margin-top:20%;
+          margin-left: 40%;
+          width: 200px;
+          height: 200px;
+          perspective: 600px;
+          perspective-origin: top;
+        }
+
+        .cube {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        animation-delay: 3s;
+        animation: bounce 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        }
+
+        .sponge {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        }
+        .outter{
+          position:absolute;
+          height: 500px;
+          width: 500px;
+          margin-left: -150px;
+          margin-top: -150px;
+          background: none;
+          border: 10px dashed #fff;
+          border-radius: 100%;
+
+        }
+        .cube:hover {
+        animation-delay: 3s;
+        animation: animation 5s infinite;
+        }
+
+        .face { 
+          stroke-dasharray: 450;
+          stroke-dashoffset: 450;
+          animation: draw 5s forwards;
+          animation-iteration-count: 1;
+          transform: rotateY(0deg)translateZ(100px);
+        }
+        .back  { transform: rotateY(180deg) translateZ(98px); }
+        .right  { transform: rotateY( 90deg) translateZ(98px); }
+        .left   { transform: rotateY(-90deg) translateZ(98px); }
+        .top    { transform: rotateX( 90deg) translateZ(98px); }
+        .down { transform: rotateX(-90deg) translateZ(98px); } 
+        
+        .sphere-one { 
+          transform: rotateX(0) translateZ(0);
+        }
+        .sphere-two {
+          transform: rotateY(-90deg) translateZ(0);
+        }      
+        .sphere-three {
+          transform: rotateX(90deg) translateY(0);
+        }  
+        .sphere-three {
+          transform: rotateY(45deg) rotateX(45deg) translateY(0);
+        }
+         .sphere-five {
+          transform: rotateY(-45deg) rotateX(-45deg) translateY(0);
+        }
+        .sphere-six {
+          transform: rotateY(-45deg) rotateX(45deg) translateY(0);
+        }
+        @keyframes animation {
+              from {transform: rotateY(0deg);}
+              to {transform: rotateY(-360deg);}
+        }
+        @keyframes draw {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+        @keyframes bounce {
+          from { transform: translate3d(0, 300px, 0);     }
+          to   { transform: translate3d(0, -200px, 0); }
+        }
+        @keyframes rotate {
+        0% {
+          transform: rotateX(-1deg) rotateY(-1deg) rotateZ(-1deg);
+        }
+        
+        50% {
+          transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+        }
+        
+        100% {
+          transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        }
+        }
+        audio{
+               z-index: 1;
+               margin-left: 90%;
+               /* display:none; */
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="scene">
+            <div class="cube">
+              <svg class="sponge face" id = "face">
+                <use href="symbol-defs.svg#face" />
+              </svg>
+              <svg class="sponge back" id = "back">
+                <use href="symbol-defs.svg#back" />
+              </svg>
+              <svg class="sponge right" id = 'right'>
+                <use href="symbol-defs.svg#right" />
+              </svg>
+              <svg class="sponge left" id = 'left'>
+                <use href="symbol-defs.svg#left" />
+              </svg>
+              <svg class="sponge top" id = 'top'>
+                <use href="symbol-defs.svg#top" />
+              </svg>
+              <svg class="sponge down" id = 'down'>
+                <use href="symbol-defs.svg#down" />
+              </svg>
+              <div class="sphere-one outter"></div>
+              <div class="sphere-two outter"></div>
+              <div class="sphere-three outter"></div>
+              <div class="sphere-four outter"></div>
+              <div class="sphere-five outter"></div>
+              <div class="sphere-six outter"></div>
+            </div>
+
+            <audio  controls autoplay loop >
+              <source src="music.mp3" type="audio/mp3" >
+            </audio>
+          </div>
+          </div>  
+    </body>
+
+</html>

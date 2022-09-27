@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Animation: Request Animation Frame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #control {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+      }
+
+      #frame {
+        width: 480px;
+        height: 480px;
+        border: 1px solid black;
+        position: relative; /* just not static */
+        overflow: hidden;
+      }
+
+      #skater {
+        position: absolute; /* relative to frame */
+      }
+    </style>
+  </head>
+
+<body>
+  <div id="control">
+    <button type="button">Stop</button>
+    <button type="button">Go</button>
+  </div>
+
+    <div id="frame">
+      <img id="skater" src="skater.png" width="150" height="150" alt="skateboarding">
+    </div>
+
+    <script>
+      const skater = document.getElementById('skater');
+      let position = -200;
+      let animation = requestAnimationFrame(skate);
+
+      function skate() {
+        animation = requestAnimationFrame(skate);
+
+        if (position < 480) { // while skater is in the frame
+          position += 4; // increment position by 4
+          skater.style.top = position + 'px'; // CSS top property
+          skater.style.left = position + 'px'; // CSS left property
+        } else {
+          position = -200; // return to starting point
+        }
+      }
+
+      stopAnimation = () => cancelAnimationFrame(animation); // cancel requestAnimationFrame()
+
+      startAnimation = () => {
+        cancelAnimationFrame(animation); // to avoid compounding animation speed
+        animation = requestAnimationFrame(skate);
+      }
+
+      document.querySelectorAll('button')[0].addEventListener('click', stopAnimation);
+      document.querySelectorAll('button')[1].addEventListener('click', startAnimation);
+    </script>
+  </body>
+</html>

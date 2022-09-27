@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1141"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="spongeleft.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1143"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.45898157"
+     inkscape:cx="229.85672"
+     inkscape:cy="777.80901"
+     inkscape:window-width="1312"
+     inkscape:window-height="872"
+     inkscape:window-x="35"
+     inkscape:window-y="95"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1138" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f7eb62;fill-opacity:1;stroke-width:1.64118;stroke-dasharray:0.164118, 0.164118"
+       id="rect846"
+       width="66.898102"
+       height="136.62845"
+       x="66.474792"
+       y="57.069668" />
+    <ellipse
+       style="fill:#bbb322;fill-opacity:1;stroke:none;stroke-width:1.60358;stroke-dasharray:0.160358, 0.160358"
+       id="path2298-4"
+       cx="118.8239"
+       cy="81.079834"
+       rx="9.9889841"
+       ry="10.435263" />
+    <ellipse
+       style="fill:#bbb322;fill-opacity:1;stroke:none;stroke-width:1.15073;stroke-dasharray:0.115073, 0.115073"
+       id="path2298-4-9"
+       cx="115.98521"
+       cy="106.15936"
+       rx="7.1066971"
+       ry="7.5529757" />
+    <ellipse
+       style="fill:#bbb322;fill-opacity:1;stroke:none;stroke-width:1.38381;stroke-dasharray:0.138381, 0.138381"
+       id="path2298-4-9-5"
+       cx="155.43329"
+       cy="102.71307"
+       rx="10.277213"
+       ry="7.5529757"
+       transform="rotate(25.533205)" />
+  </g>
+</svg>

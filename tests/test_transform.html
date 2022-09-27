@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #scene {
+            width: 200px;
+            height: 200px;
+            perspective: 600px;
+        }
+
+        .cube {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .face {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            opacity: 0.8;
+            border: 1px solid black;
+            /* text */
+            font-family: Arial;
+            line-height: 200px; /* vertical centering of text */
+            font-size: 1.5em;
+            color: white;
+            text-align: center;
+        }
+
+        .face:nth-child(1) {
+            transform: rotate(45deg) translateZ(100px);
+            background: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="scene">
+        <div class="cube">
+            <div class="face">Front</div>
+        </div>
+    </div>
+</body>
+</html>

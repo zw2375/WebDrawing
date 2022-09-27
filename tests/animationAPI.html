@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Animation: Web Animations API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #control {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+      }
+
+      #frame {
+        width: 480px;
+        height: 480px;
+        border: 1px solid black;
+        position: relative; /* just not static */
+        overflow: hidden;
+      }
+
+      #skater {
+        position: absolute; /* relative to frame */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="control">
+      <button type="button">Stop</button>
+      <button type="button">Go</button>
+      <button type="button">Reverse</button>
+    </div>
+
+    <div id="frame">
+      <img id="skater" src="skater.png" width="150" height="150" alt="skateboarding">
+    </div>
+
+    <script>
+      const skater = document.getElementById('skater');
+
+      // keyframe object
+      let movement = [
+        {transform: 'translate(-120%, -120%)'}, 
+        {transform: 'translate(360%, 360%)'}
+      ];
+
+      // timing object
+      let skateTiming = {duration: 2500, iterations: Infinity};
+
+      // put together with the animate method
+      let skate = skater.animate(
+        movement,
+        skateTiming
+      )
+
+      stopAnimation = () => skate.pause();
+      startAnimation = () => skate.play();
+      reverseAnimation = () => skate.reverse();
+
+      document.querySelectorAll('button')[0].addEventListener('click', stopAnimation);
+      document.querySelectorAll('button')[1].addEventListener('click', startAnimation);
+      document.querySelectorAll('button')[2].addEventListener('click', reverseAnimation);
+    </script>
+  </body>
+</html>

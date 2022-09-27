@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-image: url(color.png); */
+   background-size:102%;
+   height: 100%;
+   /* display: table-cell; */
+   min-height:100%;
+   /* position: absolute; */
+   margin: 0;
+   padding: 0;
+}
+
+.title h1 span {
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    height: 90px;
+    border-radius: 5px;
+}
+.title h1{
+    vertical-align: middle;
+    margin-top: 2.8%;
+}
+.title{
+    height: 191px;
+    width: 100%;
+    font-family: Sedgwick Ave;
+    font-size: 37px;
+    position: absolute;
+    z-index: 10;
+    background-image: url(colors.png),url(http://coopertype.org/images/events/meilleur_patterns_animations_1200_400.gif);
+    background-blend-mode: hard-light;
+    background-size:40%;
+    text-align:center;
+}
+
+.sticky{
+    position: fixed;
+    width :20%;
+    z-index: 10;
+    top :15%;
+  }
+
+
+#projects{
+    z-index: 20;
+    width: 80%;
+    margin-left: 20%;
+    /* position: relative; */
+    font-family: Sedgwick Ave;
+    font-size: 50px;
+    text-align:center;
+    /* margin-top: 10px; */
+}
+#projects >*{
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    border: solid 3px  #6e7491;
+    display: flex;
+    width: 90%;
+
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+    transform: rotate(-1deg);
+    transition: all 0.13s ease-in;
+    display: flex;
+}
+#projects> *:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  }
+
+  #projects> *:hover .border {
+    transform: translateY(4px) rotate(-5deg);
+  }
+
+.intro{
+    width: 90%;
+    height:350px;
+    /* padding: 4%; */
+    margin-top: 0;
+}
+.intro span{
+    font-size: 50px;
+    align-self: flex-end;
+}
+
+
+ .one{
+    height:550px;
+    padding: 2%;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.project1img{
+    flex:1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("html&css.gif");
+}
+
+
+.two{
+    height:550px;
+    padding: 2%;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.project2img{
+    flex:1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("svg.gif");
+}
+
+.three{
+    height:550px;
+    padding: 2%;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.project3img{
+    flex:1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("css.gif");
+}
+.four{
+    height:550px;
+    padding: 2%;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.project4img{
+    flex:1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("js.gif");
+}
+.five{
+    height:550px;
+    padding: 2%;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.project5img{
+    flex:1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("api.gif");
+}
+.six{
+    height:550px;
+    padding: 2%;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.project6img{
+    flex:1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("html_canvas.gif");
+}
+.seven{
+    height:550px;
+    padding: 2%;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.eight{
+    height:550px;
+    padding: 2%;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 5%;
+}
