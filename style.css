@@ -185,3 +185,10 @@ body{
     flex-direction: column;
     margin-top: 5%;
 }
+.project8img{
+    flex:1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("drawingFinal/final_project.gif");
+}
+
