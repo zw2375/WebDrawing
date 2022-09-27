@@ -178,6 +178,12 @@ body{
     flex-direction: column;
     margin-top: 5%;
 }
+.project7img{
+    flex:1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("webgl.gif");
+}
 .eight{
     height:550px;
     padding: 2%;
